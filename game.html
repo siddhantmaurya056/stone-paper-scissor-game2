@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Game - Stone Paper Scissors</title>
+
+    <link rel="stylesheet" href="game.css">
+
+</head>
+
+<body>
+
+    <div class="game-container">
+
+        <h1>🪨 Stone Paper Scissors ✂️</h1>
+
+        <div class="score-board">
+
+            <div>
+                <h2 id="player1Name">Player 1</h2>
+                <p id="score1">0</p>
+            </div>
+
+            <div>
+                <h2 id="player2Name">Player 2</h2>
+                <p id="score2">0</p>
+            </div>
+
+        </div>
+
+
+        <h2 id="round">Round 1</h2>
+
+        <div class="turn-box">
+
+            <h2 id="turnText">
+                Player 1's Turn
+            </h2>
+
+            <p id="instruction">
+                Choose your move
+            </p>
+
+        </div>
+
+
+        <div class="choices">
+
+            <button onclick="chooseMove('stone')">
+
+                🪨
+
+                <span>Stone</span>
+
+            </button>
+
+
+            <button onclick="chooseMove('paper')">
+
+                📄
+
+                <span>Paper</span>
+
+            </button>
+
+
+            <button onclick="chooseMove('scissors')">
+
+                ✂️
+
+                <span>Scissors</span>
+
+            </button>
+
+        </div>
+
+
+        <div id="result" class="result">
+
+            Choose your move to start!
+
+        </div>
+
+
+        <button
+            id="nextRoundBtn"
+            class="next-btn"
+            onclick="nextRound()"
+            style="display:none;"
+        >
+            Next Round
+        </button>
+
+
+        <button
+            class="home-btn"
+            onclick="goHome()"
+        >
+            Home
+        </button>
+
+    </div>
+
+
+    <script src="game.js"></script>
+
+</body>
+
+</html>
